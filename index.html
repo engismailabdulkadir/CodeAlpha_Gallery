@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="architecture">Architecture</button>
+    <button class="filter-btn" data-filter="people">People</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="Nature Forest.avif" alt="Nature">
+    </div>
+    <div class="gallery-item" data-category="architecture">
+      <img src="Architecture Building.avif" alt="Architecture">
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="People Portrait.avif" alt="People">
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="nature.avif" alt="Nature">
+    </div>
+    <!-- add more items as needed -->
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="closeBtn">✕</button>
+    <button class="prev" id="prevBtn">←</button>
+    <img src="" alt="Big view" id="lightboxImg">
+    <button class="next" id="nextBtn">→</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
